@@ -1,0 +1,522 @@
+
+[{
+  "jour": "Lundi",
+  "heur": "7",
+  "dispo": "true"
+},
+{
+  "jour": "Lundi",
+  "heur": "8",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "9",
+  "dispo": "true"
+},
+{
+  "jour": "Lundi",
+  "heur": "10",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "11",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "12",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "13",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "14",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "15",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "16",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "17",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "18",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "19",
+  "dispo": "false"
+},
+{
+  "jour": "Lundi",
+  "heur": "20",
+  "dispo": "true"
+},
+{
+  "jour": "Lundi",
+  "heur": "21",
+  "dispo": "true"
+},
+{
+  "jour": "Mardi",
+  "heur": "7",
+  "dispo": "true"
+},
+{
+  "jour": "Mardi",
+  "heur": "8",
+  "dispo": "false"
+},
+{
+  "jour": "Mardi",
+  "heur": "9",
+  "dispo": "true"
+},
+{
+  "jour": "Mardi",
+  "heur": "10",
+  "dispo": "false"
+},
+{
+  "jour": "Mardi",
+  "heur": "11",
+  "dispo": "false"
+},
+{
+  "jour": "Mardi",
+  "heur": "12",
+  "dispo": "false"
+},
+{
+  "jour": "Mardi",
+  "heur": "13",
+  "dispo": "false"
+},
+{
+  "jour": "Mardi",
+  "heur": "14",
+  "dispo": "true"
+},
+{
+  "jour": "Mardi",
+  "heur": "15",
+  "dispo": "true"
+},
+{
+  "jour": "Mardi",
+  "heur": "16",
+  "dispo": "true"
+},
+{
+  "jour": "Mardi",
+  "heur": "17",
+  "dispo": "false"
+},
+{
+  "jour": "Mardi",
+  "heur": "18",
+  "dispo": "false"
+},
+{
+  "jour": "Mardi",
+  "heur": "19",
+  "dispo": "false"
+},
+{
+  "jour": "Mardi",
+  "heur": "20",
+  "dispo": "false"
+},
+{
+  "jour": "Mardi",
+  "heur": "21",
+  "dispo": "true"
+},{
+  "jour": "Mercredi",
+  "heur": "7",
+  "dispo": "true"
+},
+{
+  "jour": "Mercredi",
+  "heur": "8",
+  "dispo": "false"
+},
+{
+  "jour": "Mercredi",
+  "heur": "9",
+  "dispo": "true"
+},
+{
+  "jour": "Mercredi",
+  "heur": "10",
+  "dispo": "false"
+},
+{
+  "jour": "Mercredi",
+  "heur": "11",
+  "dispo": "false"
+},
+{
+  "jour": "Mercredi",
+  "heur": "12",
+  "dispo": "false"
+},
+{
+  "jour": "Mercredi",
+  "heur": "13",
+  "dispo": "false"
+},
+{
+  "jour": "Mercredi",
+  "heur": "14",
+  "dispo": "true"
+},
+{
+  "jour": "Mercredi",
+  "heur": "15",
+  "dispo": "true"
+},
+{
+  "jour": "Mercredi",
+  "heur": "16",
+  "dispo": "true"
+},
+{
+  "jour": "Mercredi",
+  "heur": "17",
+  "dispo": "false"
+},
+{
+  "jour": "Mercredi",
+  "heur": "18",
+  "dispo": "false"
+},
+{
+  "jour": "Mercredi",
+  "heur": "19",
+  "dispo": "false"
+},
+{
+  "jour": "Mercredi",
+  "heur": "20",
+  "dispo": "true"
+},
+{
+  "jour": "Mercredi",
+  "heur": "21",
+  "dispo": "true"
+},{
+  "jour": "Jeudi",
+  "heur": "7",
+  "dispo": "true"
+},
+{
+  "jour": "Jeudi",
+  "heur": "8",
+  "dispo": "false"
+},
+{
+  "jour": "Jeudi",
+  "heur": "9",
+  "dispo": "true"
+},
+{
+  "jour": "Jeudi",
+  "heur": "10",
+  "dispo": "false"
+},
+{
+  "jour": "Jeudi",
+  "heur": "11",
+  "dispo": "false"
+},
+{
+  "jour": "Jeudi",
+  "heur": "12",
+  "dispo": "false"
+},
+{
+  "jour": "Jeudi",
+  "heur": "13",
+  "dispo": "false"
+},
+{
+  "jour": "Jeudi",
+  "heur": "14",
+  "dispo": "false"
+},
+{
+  "jour": "Jeudi",
+  "heur": "15",
+  "dispo": "true"
+},
+{
+  "jour": "Jeudi",
+  "heur": "16",
+  "dispo": "true"
+},
+{
+  "jour": "Jeudi",
+  "heur": "17",
+  "dispo": "false"
+},
+{
+  "jour": "Jeudi",
+  "heur": "18",
+  "dispo": "false"
+},
+{
+  "jour": "Jeudi",
+  "heur": "19",
+  "dispo": "false"
+},
+{
+  "jour": "Jeudi",
+  "heur": "20",
+  "dispo": "true"
+},
+{
+  "jour": "Jeudi",
+  "heur": "21",
+  "dispo": "true"
+}, {
+  "jour": "Vendredi",
+  "heur": "7",
+  "dispo": "true"
+},
+{
+  "jour": "Vendredi",
+  "heur": "8",
+  "dispo": "false"
+},
+{
+  "jour": "Vendredi",
+  "heur": "9",
+  "dispo": "true"
+},
+{
+  "jour": "Vendredi",
+  "heur": "10",
+  "dispo": "false"
+},
+{
+  "jour": "Vendredi",
+  "heur": "11",
+  "dispo": "false"
+},
+{
+  "jour": "Vendredi",
+  "heur": "12",
+  "dispo": "false"
+},
+{
+  "jour": "Vendredi",
+  "heur": "13",
+  "dispo": "false"
+},
+{
+  "jour": "Vendredi",
+  "heur": "14",
+  "dispo": "true"
+},
+{
+  "jour": "Vendredi",
+  "heur": "15",
+  "dispo": "true"
+},
+{
+  "jour": "Vendredi",
+  "heur": "16",
+  "dispo": "true"
+},
+{
+  "jour": "Vendredi",
+  "heur": "17",
+  "dispo": "false"
+},
+{
+  "jour": "Vendredi",
+  "heur": "18",
+  "dispo": "false"
+},
+{
+  "jour": "Vendredi",
+  "heur": "19",
+  "dispo": "false"
+},
+{
+  "jour": "Vendredi",
+  "heur": "20",
+  "dispo": "true"
+},
+{
+  "jour": "Vendredi",
+  "heur": "21",
+  "dispo": "true"
+},
+{
+  "jour": "Samedi",
+  "heur": "7",
+  "dispo": "true"
+},
+{
+  "jour": "Samedi",
+  "heur": "8",
+  "dispo": "false"
+},
+{
+  "jour": "Samedi",
+  "heur": "9",
+  "dispo": "true"
+},
+{
+  "jour": "Samedi",
+  "heur": "10",
+  "dispo": "false"
+},
+{
+  "jour": "Samedi",
+  "heur": "11",
+  "dispo": "false"
+},
+{
+  "jour": "Samedi",
+  "heur": "12",
+  "dispo": "false"
+},
+{
+  "jour": "Samedi",
+  "heur": "13",
+  "dispo": "false"
+},
+{
+  "jour": "Samedi",
+  "heur": "14",
+  "dispo": "true"
+},
+{
+  "jour": "Samedi",
+  "heur": "15",
+  "dispo": "true"
+},
+{
+  "jour": "Samedi",
+  "heur": "16",
+  "dispo": "true"
+},
+{
+  "jour": "Samedi",
+  "heur": "17",
+  "dispo": "false"
+},
+{
+  "jour": "Samedi",
+  "heur": "18",
+  "dispo": "false"
+},
+{
+  "jour": "Samedi",
+  "heur": "19",
+  "dispo": "false"
+},
+{
+  "jour": "Samedi",
+  "heur": "20",
+  "dispo": "true"
+},
+{
+  "jour": "Samedi",
+  "heur": "21",
+  "dispo": "true"
+},{
+  "jour": "Dimanche",
+  "heur": "7",
+  "dispo": "true"
+},
+{
+  "jour": "Dimanche",
+  "heur": "8",
+  "dispo": "true"
+},
+{
+  "jour": "Dimanche",
+  "heur": "9",
+  "dispo": "true"
+},
+{
+  "jour": "Dimanche",
+  "heur": "10",
+  "dispo": "false"
+},
+{
+  "jour": "Dimanche",
+  "heur": "11",
+  "dispo": "false"
+},
+{
+  "jour": "Dimanche",
+  "heur": "12",
+  "dispo": "false"
+},
+{
+  "jour": "Dimanche",
+  "heur": "13",
+  "dispo": "false"
+},
+{
+  "jour": "Dimanche",
+  "heur": "14",
+  "dispo": "true"
+},
+{
+  "jour": "Dimanche",
+  "heur": "15",
+  "dispo": "true"
+},
+{
+  "jour": "Dimanche",
+  "heur": "16",
+  "dispo": "true"
+},
+{
+  "jour": "Dimanche",
+  "heur": "17",
+  "dispo": "false"
+},
+{
+  "jour": "Dimanche",
+  "heur": "18",
+  "dispo": "false"
+},
+{
+  "jour": "Dimanche",
+  "heur": "19",
+  "dispo": "false"
+},
+{
+  "jour": "Dimanche",
+  "heur": "20",
+  "dispo": "true"
+},
+{
+  "jour": "Dimanche",
+  "heur": "21",
+  "dispo": "true"
+}]
