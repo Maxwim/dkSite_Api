@@ -14,7 +14,7 @@ var HttpClient = function(url) {
 app.controller('calendar', function($scope){
     $scope.days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
     $scope.hours = ['7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'];
-    // Quand la parche charge
+    // Quand la parge charge
     $scope.onload = function() {
         // Curl API du site pour voir les disponibilitée du jour
         var client = new HttpClient('http://localhost/site/kd_a_domicile/API/?date=2021-09-01');
@@ -31,11 +31,7 @@ app.controller('calendar', function($scope){
                 if(data != "false" && dispo[i]){
                     // console.log(dispo[i]);
                     document.getElementById(dispo[i]).style.backgroundColor = "#FF1F12";
-                }else{
-                        // document.getElementById(data[i].heur + data[i].jour).style.backgroundColor = "red";
                 }
-                // console.log(9*i);
-
             }
         }
     });      
@@ -44,7 +40,7 @@ app.controller('calendar', function($scope){
 
 
 
-// Permet de récupèrer les informations du fichier JSON.
+// MAP
 app.controller('map', function($scope){
     let mymap = L.map('maCarte').setView([49.679, 2.763], 11);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
