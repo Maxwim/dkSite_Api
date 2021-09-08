@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html ng-app="app">
+<!-- Meta  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD a domicile - Aide à domicile aux personnes agées</title>
+    <meta name="description" content="Société roye dans l'aide à domicile aux personnes agées, faire à manger, les occupés... Je sais pas quoi mettre d'autres c'est ton baille">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/style-base.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <link rel="icon" href="http://localhost/site/kd_a_domicile/public_html/img/MyLogo.ico" />
+    <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+</head>
+<body>
+    <!-- Web Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg top">
+
+            <div class="container">
+                <div class="divLogo">
+                    <a href="#" class="navbar-brand"><img src="http://localhost/site/kd_a_domicile/public_html/img/MyLogo.png" width="120" height="90" class="logo"></a>
+                </div>
+                <button type="button" data-toggle="collapses" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                
+                <div id="navbarSupportedContent" class="collapses navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="#!/index" class="nav-link text-uppercase font-weight-bold">Aceuil <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="#!/Informations" class="nav-link text-uppercase font-weight-bold">Informations</a></li>
+                        <!-- <li class="nav-item"><a href="#!/Blog" class="nav-link text-uppercase font-weight-bold">Blog</a></li> -->
+                        <li class="nav-item"><a href="#!/Contact" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="trait_dessus"><hr></div> 
+    </header>
+    <!-- Main gérer par angular -->
+    <main>
+        <!-- <p> hello world</p> -->
+        <div ng-view="app"></div>
+    </main>
+    <!-- Web footer -->
+    <footer>
+        <div class="footer-clean">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#!/Informations" class="s">Informations</a></li>
+                        <!-- <li><a href="#!/Blog" class="s">Blog</a></li> -->
+                        <li><a href="#!/Contact" class="s">Contact</a></li>
+                    </ul>
+                </div>
+               
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Horaires</h3>
+                    <ul>
+                        <li><p class="h">Du Lundi au Dimanche <br>7h - 21h</p></li>
+                    </ul>
+                </div>
+                <div class="bingbing col-lg-3">
+                    <!-- <a href="#"><i class="iconify" data-icon="ion:logo-facebook" data-width="50" data-height="50"></i></a> -->
+                    <a href="#"><i class="iconify" data-icon="fa-brands:snapchat" data-width="50" data-height="50"></i></a>
+                    <a href="#"><i class="iconify" data-icon="entypo-social:instagram-with-circle" data-width="50" data-height="50"></i></a>
+                    <p class="copyright">Company DK a domicile © 2021</p>
+                    <p class="copyright">WebMaster <a href='#'>site</a> © 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+<script src="app/main.js"></script> 
+<script src="app/app.js"></script> 
+
+<!-- <script src="js/script.js"></script> -->
+</html>
