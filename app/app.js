@@ -1,3 +1,4 @@
+// Requête HTTP 
 var HttpClient = function(url) {
     this.get = function(callback) {
         var rqt = new XMLHttpRequest();
@@ -9,12 +10,13 @@ var HttpClient = function(url) {
         rqt.send( null );
     }
 }
+// Calendrier
 app.controller('calendar', function($scope){
     $scope.days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
     $scope.hours = ['7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'];
     // Quand la parche charge
     $scope.onload = function() {
-
+        // Curl API du site pour voir les disponibilitée du jour
         var client = new HttpClient('http://localhost/site/kd_a_domicile/API/?date=2021-09-01');
         // Vérification plus tard
         client.get(function(response) {
