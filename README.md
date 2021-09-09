@@ -3,6 +3,8 @@ Partage des sources client avec autorisations.
 
 Projet créer avec AngularJS et les langages Web
 API créer en PHP pour les essaie avec une sortie des données en JSON
+Site responsive
+J'ai utilisé beaucoup de CSS et un peu de https://getbootstrap.com/
 
 <h1>Page "Acceuil" en constructions</h1><br>
 En construction, pas trop d'idées pour le front de cette page.
