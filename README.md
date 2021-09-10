@@ -16,3 +16,6 @@ En construction, pas trop d'idées pour le front de cette page.
 <a href="https://ibb.co/WnpcRyf"><img src="https://i.ibb.co/WnpcRyf/Screenshot-2021-09-09-at-08-51-48-KD-a-domicile-Aide-domicile-aux-personnes-ag-es.png" alt="Screenshot-2021-09-09-at-08-51-48-KD-a-domicile-Aide-domicile-aux-personnes-ag-es" border="0"></a>
 
 Le site n'a pas encore été corrigé sur cette version, les informations donnée ont été cherché en fonction des outils du client. 
+
+
+Un côté administrateur et en création pour gérer le calendrier la map... 
