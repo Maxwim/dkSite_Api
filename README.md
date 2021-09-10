@@ -2,7 +2,7 @@
 Partage des sources client avec autorisations.
 
 Projet créer avec AngularJS et les langages Web<br>
-API créer en PHP pour les essaie avec une sortie des données en JSON<br>
+API créer en PHP pour les essaie avec une sortie des données en JSON, je passerai surement par CodeIgneiter quand le client serra finis<br>
 Site responsive<br>
 J'ai utilisé beaucoup de CSS et un peu de https://getbootstrap.com/<br><br>
 
