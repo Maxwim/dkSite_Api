@@ -1,5 +1,4 @@
-// Requête HTTP 
-var HttpClient = function(url) {
+let HttpGet = function(url) {
     this.get = function(callback) {
         var rqt = new XMLHttpRequest();
         rqt.onreadystatechange = function() { 
@@ -10,26 +9,24 @@ var HttpClient = function(url) {
         rqt.send( null );
     }
 }
-// Calendrier
+
+
 app.controller('calendar', function($scope){
     $scope.days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
     $scope.hours = ['7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'];
-    // Quand la parge charge
+    // Quand la parche charge
+    
     $scope.onload = function() {
-        // Curl API du site pour voir les disponibilitée du jour
-        var client = new HttpClient('http://localhost/site/kd_a_domicile/API/?date=2021-09-01');
+
+        var client = new HttpGet('http://localhost/site/kd_a_domicile/API/?date=2021-09-01');
         // Vérification plus tard
         client.get(function(response) {
         data = JSON.parse(response);
-        // let calc = 0;
         if(response != false){
             data = JSON.parse(response);
             let dispo = data[2].split(";");
-            // console.log(dispo);
-            
             for(i=0;i<dispo.length;i++){
                 if(data != "false" && dispo[i]){
-                    // console.log(dispo[i]);
                     document.getElementById(dispo[i]).style.backgroundColor = "#FF1F12";
                 }
             }
@@ -37,10 +34,7 @@ app.controller('calendar', function($scope){
     });      
     }
 })
-
-
-
-// MAP
+// Permet de récupèrer les informations du fichier JSON.
 app.controller('map', function($scope){
     let mymap = L.map('maCarte').setView([49.679, 2.763], 11);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -54,5 +48,33 @@ app.controller('map', function($scope){
         radius: 12000
     }).addTo(mymap);
   });
+app.controller('sendMails', function($scope){
+    //$scope.messages ="ok";
+    elem = document.getElementsByClassName('Message');
+    click= document.getElementById('sendMails');
+    click.onclick = function () {
+        let mails = { 
+            API: 'sendMails',
+            nom: $scope.nom,
+            prenom: $scope.prenom,
+            email: $scope.email,
+            telephone: $scope.telephone,
+            message: $scope.message,
+        };
+        if($scope.telephone !== undefined && $scope.email !== undefined){
+            const sendMails = fetch('http://dkadomicile.fr/API/send.php', {
+                method: "POST",
+                body: JSON.stringify(mails),
+                headers: {
+                    "Content-Type": "application/json",
+                },                
+            })
+            $scope.messages = "Message envoyé."
 
-
+            console.log("info User: "+mails.nom);   
+        }else{
+            $scope.messages = "Formulaire invalide."
+        }
+        //HttpPost("http://www.dkadomicile.fr/API/send.php",data);
+    }
+});

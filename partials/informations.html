@@ -1,0 +1,79 @@
+
+<div class="cntainer" ng-controller="calendar">
+    <div class="text-center">
+        <h1 class="titreI">Toutes les informations concernant les aides et les disponibilités </h1>
+    </div>
+    <div class="container">
+        <div class="calendar">  
+            <div class="text-center">
+                <h5 class="card-header">Diponnibilité</h5>
+            </div>
+            <!-- <h1 class="dispo">Diponnibilité</h1> -->
+            <!-- <input type="date" style="display:block; float: none;text-align: center;" id="start" name="trip-start" value="2021-08-22" min="2018-01-01" max="2118-12-31" > -->
+            
+            <ul class="day"> &nbsp; 
+                <li ng-repeat="hour in hours" class="hours" id="{{hour}}">{{hour +'h'}}</li>
+            </ul>
+            <ul ng-repeat="day in days" class="day" id="{{day}}">
+                {{day}}
+                <li ng-repeat="hour in hours" class="hour" id="{{hour + day}}"></li> &nbsp; 
+            </ul>
+            <ul class="day">
+                <li></li>
+            </ul>
+            <div class="text-center">
+                <a href="http://dkadomicile.fr/#!/Contact"><button type="button" class="btn btn-success">Prendre rendez vous</button></a>
+            </div>
+            <p>&nbsp; </p>
+
+            {{onload()}}
+        </div>
+    </div>
+    <p>&nbsp; </p>
+
+    <div class="container">
+        <div class="card">
+            <div class="text-center">
+                <h5 class="card-header">Quelles prestations rendues ?</h5>
+            </div>
+            <div class="card-body">
+                <div class="text-center">
+                    <h5 class="card-header">Assistante aux personnes âgées et aux personnes en difficulté</h5>
+                    <h5 class="card-header">Proposition d'aide aux repas.</h5>
+                    <h5 class="card-header">L’entretien du logement et du linge.</h5>
+                    <h5 class="card-header">L’aide aux courses.</h5>
+                    <h5 class="card-header">La préparation des repas</h5>
+                    <h5 class="card-header">La prise des repas</h5>
+                    <h5 class="card-header">L’aide au coucher</h5>
+                    <h5 class="card-header">Aide aux transports</h5>
+                </div>
+                <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate ipsum est molestiae necessitatibus nemo itaque commodi exercitationem beatae aliquam eum quibusdam, laudantium iusto quo blanditiis alias omnis? Iusto, vel?.</p> -->
+            </div>
+        </div>
+    </div>
+    <p>&nbsp; </p>
+    <div class="container">
+        <div class="card">
+            <div class="text-center">
+                <h5 class="card-header">Qu'est ce que le CESU ? </h5>
+            </div>
+            <div class="card-body">
+                <div class="text-center">
+                    <h5 class="card-title">le CESU permet à un particulier de rémunérer des activités de services à la personne.</h5>
+                </div>
+                <p class="card-text">Le Cesu peut s’utiliser de manière régulière ou ponctuelle, pour un emploi à temps partiel ou à temps complet. C’est un dispositif de déclaration. Il ne permet pas de payer le salarié.</p><br>
+                <div class="text-center">
+                    <h5 class="card-title">Les avantages du CESU.</h5>
+                </div>
+                <div class="card-text">Avec le Cesu, vous êtes assuré d’être dans la légalité et d’offrir à votre salarié une protection sociale, et avec le service Cesu +, vous confiez au Cesu tout le processus de rémunération de votre salarié. Il ne vous reste alors qu’une seule action à réaliser chaque mois : la déclaration. Le Cesu se charge du reste. </div><br>
+                <div class="text-center">
+                    <!-- -->
+                    <a href=" https://www.cesu.urssaf.fr/info/accueil/s-informer-sur-le-cesu/tout-savoir/c-est-quoi-pour-qui.html" target="_blank"><button type="button" class="btn btn-success">Accéder au site du CESU.</button></a> <br>
+                    <!-- <input type="submit" class="btn btn-success" value="Accéder au site du CESU."> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>&nbsp; </p>
+    
+</div>
