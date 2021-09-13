@@ -18,13 +18,13 @@ app.controller('calendar', function($scope){
     
     $scope.onload = function() {
 
-        var client = new HttpGet('http://localhost/site/kd_a_domicile/API/?date=2021-09-01');
+        var client = new HttpGet('http://dkadomicile.fr/API/data.json');
         // Vérification plus tard
         client.get(function(response) {
         data = JSON.parse(response);
         if(response != false){
             data = JSON.parse(response);
-            let dispo = data[2].split(";");
+            let dispo = data['details'].split(";");
             for(i=0;i<dispo.length;i++){
                 if(data != "false" && dispo[i]){
                     document.getElementById(dispo[i]).style.backgroundColor = "#FF1F12";
@@ -50,7 +50,7 @@ app.controller('map', function($scope){
   });
 app.controller('sendMails', function($scope){
     //$scope.messages ="ok";
-    elem = document.getElementsByClassName('Message');
+    elem = document.getElementById('Message');
     click= document.getElementById('sendMails');
     click.onclick = function () {
         let mails = { 
@@ -61,7 +61,7 @@ app.controller('sendMails', function($scope){
             telephone: $scope.telephone,
             message: $scope.message,
         };
-        if($scope.telephone !== undefined && $scope.email !== undefined){
+        if($scope.telephone !== undefined && $scope.email !== undefined && $scope.nom !== undefined && $scope.prenom !== undefined && $scope.message !== undefined){
             const sendMails = fetch('http://dkadomicile.fr/API/send.php', {
                 method: "POST",
                 body: JSON.stringify(mails),
@@ -69,11 +69,14 @@ app.controller('sendMails', function($scope){
                     "Content-Type": "application/json",
                 },                
             })
-            $scope.messages = "Message envoyé."
+            $scope.messages = "Message envoyé.";
+            elem.style.color = "green";
 
             console.log("info User: "+mails.nom);   
         }else{
-            $scope.messages = "Formulaire invalide."
+            $scope.messages = "Formulaire pas remplis."; 
+            elem.style.color = "red";
+
         }
         //HttpPost("http://www.dkadomicile.fr/API/send.php",data);
     }
