@@ -10,7 +10,8 @@ J'ai utilisé beaucoup de CSS et un peu de https://getbootstrap.com/<br><br>
 En construction, pas trop d'idées pour le front de cette page.
 
 <h1>Page "Informaions"</h1><br>
-<a href="https://ibb.co/X7632bK"><img src="https://i.ibb.co/X7632bK/Screenshot-2021-09-09-at-08-51-35-KD-a-domicile-Aide-domicile-aux-personnes-ag-es.png" alt="Screenshot-2021-09-09-at-08-51-35-KD-a-domicile-Aide-domicile-aux-personnes-ag-es" border="0"></a>
+<a href="https://ibb.co/X7632bK"><img src="https://i.ibb.co/X7632bK/Screenshot-2021-09-09-at-08-51-35-KD-a-domicile-Aide-domicile-aux-personnes-ag-es.png" alt="Screenshot-2021-09-09-at-08-51-35-KD-a-domicile-Aide-domicile-aux-personnes-ag-es" border="0"></a><br>
+Actuellement les données du tableau sont stocké dans une base de donnée, pour éviter la gestion de base de donnée, les données du tableau et le code de l'API vas etre sur la gestion d'un seul fichier JSON, qui serra modifiable a tout moment depuis un côté adminisrateur.
 
 <h1>Page "Contact"</h1><br>
 <a href="https://ibb.co/WnpcRyf"><img src="https://i.ibb.co/WnpcRyf/Screenshot-2021-09-09-at-08-51-48-KD-a-domicile-Aide-domicile-aux-personnes-ag-es.png" alt="Screenshot-2021-09-09-at-08-51-48-KD-a-domicile-Aide-domicile-aux-personnes-ag-es" border="0"></a><br>
