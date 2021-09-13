@@ -13,11 +13,12 @@ En construction, pas trop d'idées pour le front de cette page.
 <a href="https://ibb.co/X7632bK"><img src="https://i.ibb.co/X7632bK/Screenshot-2021-09-09-at-08-51-35-KD-a-domicile-Aide-domicile-aux-personnes-ag-es.png" alt="Screenshot-2021-09-09-at-08-51-35-KD-a-domicile-Aide-domicile-aux-personnes-ag-es" border="0"></a>
 
 <h1>Page "Contact"</h1><br>
-<a href="https://ibb.co/WnpcRyf"><img src="https://i.ibb.co/WnpcRyf/Screenshot-2021-09-09-at-08-51-48-KD-a-domicile-Aide-domicile-aux-personnes-ag-es.png" alt="Screenshot-2021-09-09-at-08-51-48-KD-a-domicile-Aide-domicile-aux-personnes-ag-es" border="0"></a>
-Ajout de l'envoie des données du formulaire en POST/Json, permettant le récupèrer avec un serveur et envoyé le mails.
-Serveur mails configurer avec PHP/Postfix et un compte gmails.
+<a href="https://ibb.co/WnpcRyf"><img src="https://i.ibb.co/WnpcRyf/Screenshot-2021-09-09-at-08-51-48-KD-a-domicile-Aide-domicile-aux-personnes-ag-es.png" alt="Screenshot-2021-09-09-at-08-51-48-KD-a-domicile-Aide-domicile-aux-personnes-ag-es" border="0"></a><br>
+Ajout de l'envoie des données du formulaire en POST/json, permettant le récupèrer avec un serveur et envoyé le mails.<br>
+
+Serveur mails configurer avec PHP/Postfix et un compte gmails.<br><br>
 
 Le site n'a pas encore été corrigé sur cette version, les informations donnée ont été cherché en fonction des outils du client. 
-
+<br>
 
 Un côté administrateur et en création pour gérer le calendrier la map... 
