@@ -5,34 +5,62 @@ let HttpGet = function(url) {
             if (rqt.readyState == 4 && rqt.status == 200)
                 callback(rqt.responseText);
         }
+        
         rqt.open( "GET", url, true );            
         rqt.send( null );
     }
 }
 
+let Popup = function(){
 
+}
 app.controller('calendar', function($scope){
     $scope.days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
     $scope.hours = ['7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'];
     // Quand la parche charge
-    
-    $scope.onload = function() {
-
-        var client = new HttpGet('http://dkadomicile.fr/API/data.json');
-        // Vérification plus tard
+    onloads = function() {
+        let client = new HttpGet('http://dkadomicile.fr/API/data.json');
+        let dataLink = window.location.href;
+        let modal = document.getElementById("myModal");
+        let modalText = document.getElementById('text');
         client.get(function(response) {
         data = JSON.parse(response);
-        if(response != false){
+        if(response != false){ 
+            //Récupération des données
             data = JSON.parse(response);
-            let dispo = data['details'].split(";");
-            for(i=0;i<dispo.length;i++){
-                if(data != "false" && dispo[i]){
-                    document.getElementById(dispo[i]).style.backgroundColor = "#FF1F12";
+            if(dataLink.indexOf("=")>0){
+                let words = dataLink.split('=');
+                let datails = data['details'].split(';');
+                if(words !== "8Lundi"){
+                    console.log(datails.indexOf(words[1]) > 1);
+                    if(datails.indexOf(words[1]) > 0){
+                        modalText.innerHTML = "L'heure et déjà prise.";
+                        modal.style.display = "block";
+                    }else{
+                        modalText.innerHTML = "Rendez vous possible.";
+                        modal.style.display = "block";
+                    }
                 }
             }
+            let dispo = data['details'].split(";");
+                for(i=0;i<dispo.length;i++){
+                    if(dispo[i]){
+                        if(data != "false"){
+                            document.getElementById(dispo[i]).style.backgroundColor = "#FF1F12";
+                        }
+                    }
+                    // www.url.fr/?rdv=Data
+                }
         }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
     });      
     }
+    onloads();
+
 })
 // Permet de récupèrer les informations du fichier JSON.
 app.controller('map', function($scope){

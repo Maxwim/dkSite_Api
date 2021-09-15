@@ -2,34 +2,9 @@
 <div class="cntainer" ng-controller="calendar">
     <div class="text-center">
         <h1 class="titreI">Toutes les informations concernant les aides et les disponibilités </h1>
+        <img src="img/index-1.png">
     </div>
-    <div class="container">
-        <div class="calendar">  
-            <div class="text-center">
-                <h5 class="card-header">Diponnibilité</h5>
-            </div>
-            <!-- <h1 class="dispo">Diponnibilité</h1> -->
-            <!-- <input type="date" style="display:block; float: none;text-align: center;" id="start" name="trip-start" value="2021-08-22" min="2018-01-01" max="2118-12-31" > -->
-            
-            <ul class="day"> &nbsp; 
-                <li ng-repeat="hour in hours" class="hours" id="{{hour}}">{{hour +'h'}}</li>
-            </ul>
-            <ul ng-repeat="day in days" class="day" id="{{day}}">
-                {{day}}
-                <li ng-repeat="hour in hours" class="hour" id="{{hour + day}}"></li> &nbsp; 
-            </ul>
-            <ul class="day">
-                <li></li>
-            </ul>
-            <div class="text-center">
-                <a href="http://dkadomicile.fr/#!/Contact"><button type="button" class="btn btn-success">Prendre rendez vous</button></a>
-            </div>
-            <p>&nbsp; </p>
-
-            {{onload()}}
-        </div>
-    </div>
-    <p>&nbsp; </p>
+    
 
     <div class="container">
         <div class="card">
@@ -49,6 +24,32 @@
                 </div>
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate ipsum est molestiae necessitatibus nemo itaque commodi exercitationem beatae aliquam eum quibusdam, laudantium iusto quo blanditiis alias omnis? Iusto, vel?.</p> -->
             </div>
+        </div>
+    </div>
+    <p>&nbsp; </p>
+    <div class="container">
+        <div class="calendar">  
+            <div class="text-center">
+                <h5 class="card-header">Diponnibilité</h5>
+            </div>
+            <!-- <h1 class="dispo">Diponnibilité</h1> -->
+            <!-- <input type="date" style="display:block; float: none;text-align: center;" id="start" name="trip-start" value="2021-08-22" min="2018-01-01" max="2118-12-31" > -->
+            
+            <ul class="day"> &nbsp; 
+                <li ng-repeat="hour in hours" class="hours" id="{{hour}}">{{hour +'h'}}</li>
+            </ul>
+            <ul ng-repeat="day in days" class="day" id="{{day}}">
+                {{day}}
+                <a ng-repeat="hour in hours" href="#!/Informations?&Rdv={{hour + day}}"><li class="hour" id="{{hour + day}}"></li></a> &nbsp; 
+            </ul>
+            <ul class="day">
+                <li></li>
+            </ul>
+            <div class="text-center">
+                <a href="http://dkadomicile.fr/#!/Contact"><button type="button" class="btn btn-success">Prendre rendez vous</button></a>
+            </div>
+            <p>&nbsp; </p>
+
         </div>
     </div>
     <p>&nbsp; </p>
@@ -74,6 +75,17 @@
             </div>
         </div>
     </div>
-    <p>&nbsp; </p>
-    
+<!-- The Modal -->
+    <div class="container col-sm-12">
+        <div id="myModal" class="modal">
+        
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p id="text"></p>
+            </div>
+        
+        </div> 
+            <p>&nbsp; </p>
+        </div>
+    </div>
 </div>
