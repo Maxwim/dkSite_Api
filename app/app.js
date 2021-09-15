@@ -22,7 +22,10 @@ app.controller('calendar', function($scope){
         let client = new HttpGet('http://dkadomicile.fr/API/data.json');
         let dataLink = window.location.href;
         let modal = document.getElementById("myModal");
-        let modalText = document.getElementById('text');
+        //let modalText = document.getElementById('text');
+        let modalOk = document.getElementById('myModalOk');
+        let modalPasOk = document.getElementById('myModalPasOk');
+
         client.get(function(response) {
         data = JSON.parse(response);
         if(response != false){ 
@@ -31,14 +34,19 @@ app.controller('calendar', function($scope){
             if(dataLink.indexOf("=")>0){
                 let words = dataLink.split('=');
                 let datails = data['details'].split(';');
-                if(words !== "8Lundi"){
+                if(words[1] !== "8Lundi"){
                     console.log(datails.indexOf(words[1]) > 1);
+                    //document.getElementsByClassName(words[1]).style.backgroundColor = "pink";
                     if(datails.indexOf(words[1]) > 0){
-                        modalText.innerHTML = "L'heure et déjà prise.";
+                        //modalText.innerHTML = "L'heure et déjà prise.";
                         modal.style.display = "block";
+                        modalOk.style.display = "none";
+                        modalPasOk.style.display = "block";
                     }else{
-                        modalText.innerHTML = "Rendez vous possible.";
+                        //modalText.innerHTML = "Rendez vous possible.";
                         modal.style.display = "block";
+                        modalOk.style.display = "block";
+                        modalPasOk.style.display = "none";
                     }
                 }
             }

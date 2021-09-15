@@ -111,6 +111,9 @@ body {
     }
   }
   @media (max-width:767px) {
+    .picture-left{
+      display: none;
+    }
     .calendar{
       display: none;
     }
@@ -216,4 +219,58 @@ body {
 }
 .divLogo:hover{
   filter: brightness(130%);
+}
+.imgIndex{
+   /* Fixe l'image en haut à gauche de la page */
+ position: fixed; 
+ top: 0; 
+ left: 0; 
+ /* Préserve le ratio de l'image */
+ min-width: 100%;
+ min-height: 100%;
+}
+.picture-left{
+    float: left;
+}
+.textT{
+  color:white;
+}
+.textT:hover{
+  color:rgb(218, 218, 218);
+}
+.hour:active{
+  background-color: white;
+  color: white;
+}
+
+
+ /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+
+}
+
+.myModalOk, .myModalPasOk{
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  top: 30px;
+  background-color: rgb(255, 255, 255);
+  margin:20px;
+  border-radius: 15px;
+  display: none;
 }
