@@ -274,3 +274,6 @@ body {
   border-radius: 15px;
   display: none;
 }
+.modal{
+  margin: 10px;
+}

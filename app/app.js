@@ -15,6 +15,7 @@ let Popup = function(){
 
 }
 app.controller('calendar', function($scope){
+    // Créer le tableau avec AngularJS pour le front
     $scope.days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
     $scope.hours = ['7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'];
     // Quand la parche charge
@@ -38,12 +39,10 @@ app.controller('calendar', function($scope){
                     console.log(datails.indexOf(words[1]) > 1);
                     //document.getElementsByClassName(words[1]).style.backgroundColor = "pink";
                     if(datails.indexOf(words[1]) > 0){
-                        //modalText.innerHTML = "L'heure et déjà prise.";
                         modal.style.display = "block";
                         modalOk.style.display = "none";
                         modalPasOk.style.display = "block";
                     }else{
-                        //modalText.innerHTML = "Rendez vous possible.";
                         modal.style.display = "block";
                         modalOk.style.display = "block";
                         modalPasOk.style.display = "none";

@@ -81,10 +81,45 @@
             <div class="container text-center col-md-10">
                 <!-- Modal content -->
                 <div id="myModalOk" class="myModalOk">
-                    <h1>Rendez vous possible.</h1>
+                    <h1 class="card-header">Prise de rendez-vous.</h1>
+                    <br>
+                    <form>
+                        <div class="container">
+                            <div class="row">
+                            <div class="col">
+                                    <input type="text" class="form-control" placeholder="Nom">
+                                </div>
+                                <div class="col">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control"  name="emails" id="emails" placeholder="Emails">
+                                </div>
+                                <div class="col">
+                                    <input type="tel" class="form-control"  name="Tel" id="Tel" placeholder="Tel">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="date" class="form-control" name="date" id="date">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" name="Heure" id="Heure" placeholder="Lundi 17h" disabled>
+                                </div>
+                            </div>
+                            <br><br>
+                            <input type="submit" class="btn btn-success" value="Prendre le rendez-vous">
+                        </div>
+                      </form>
+                      <br><br>
                 </div>
                 <div id="myModalPasOk" class="myModalPasOk">
-                    <h1>Rendez vous pas possible à cette heure la.</h1>
+                    
+                    <img src="http://dkadomicile.fr/img/err.png" height="300px" width="300px">
                 </div>
             </div>
         </div> 
