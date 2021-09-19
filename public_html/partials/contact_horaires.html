@@ -1,43 +1,47 @@
-<div style="padding:18px 16px" ng-controller="map">
+<div style="padding:18px 16px" >
 <!------ Include the above in your HEAD tag ---------->
 
 
 <div class="row" id="contatti">
 <div class="container mt-5" >
 
-    <div class="row" style="height:550px;">
+    <div class="row" style="height:550px;" ng-controller="map">
       <div class="col-md-6">
         <!-- <div class="container"> -->
             <div id="maCarte"></div>
         <!-- </div> -->
       </div>
       <div class="col-md-6">
-        <h2 class="text-uppercase mt-3 font-weight-bold text-white">CONTAT</h2>
-        <form action="">
+        <div class="text-center">
+          <h2 class="text-uppercase mt-3 font-weight-bold text-white">CONTAT</h2>
+        </div>
+        <form ng-controller="sendMails">
           <div class="row">
+            <input type="text" class="form-control mt-2" ng-model="sendMail" hidden=true>
+
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="text" class="form-control mt-2" placeholder="Nom" required>
+                <input type="text" class="form-control mt-2" ng-model="nom" placeholder="Nom"  required>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="text" class="form-control mt-2" placeholder="Prénom" required>
+                <input type="text" class="form-control mt-2" ng-model="prenom"  placeholder="Prénom"  required>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="email" class="form-control mt-2" placeholder="Emails" required>
+                <input type="email" class="form-control mt-2" ng-model="email" placeholder="Emails"  required>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
-                <input type="text" class="form-control mt-2" placeholder="Telephone" required>
+                <input type="text" class="form-control mt-2" ng-model="telephone" placeholder="Telephone"  required>
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="" rows="3" required></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" ng-model="message" placeholder="" rows="3" required></textarea>
               </div>
             </div>
             <div class="col-12">
@@ -51,7 +55,9 @@
             </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-light" type="submit">Envoyé</button>
+              <button class="btn btn-light" type="submit" id="sendMails">Envoyé</button>
+              <p id="Message">{{messages}}</p>
+
             </div>
           </div>
         </form>
@@ -61,6 +67,7 @@
         <i class="fas fa-phone mt-3"></i> <a href="tel:+"  class="l">(+33) 712344598</a><br>
         <i class="fa fa-envelope mt-3"></i> <a href="" class="l">contact@kdadomicile.fr</a><br>
         </div>
-
+        
     </div>
 </div>
+<br><br>
