@@ -32,7 +32,7 @@ app.controller('calendar', function($scope){
         let dates = new Date();
         console.log();
         let checker;
-        let date = date.getDay(); 
+        let date = dates.getDay(); 
         //  récupèration de hours+jours
         $scope.jours = words[1];   
         console.log(words[0])
@@ -65,6 +65,7 @@ app.controller('calendar', function($scope){
                 btn.style.display = "none";
 
             }
+            let count;
            for(i=0;i<$scope.days;i++){
                count = i;
                if($scope.days[i]===$scope.jours){
@@ -78,13 +79,13 @@ app.controller('calendar', function($scope){
                 console.log($scope.jours);
                 // bug sur le Lundi 8H je sais pas pourquoi
                 if(words[1] !== "8Lundi"){
-               /*     
-                    if(date+1 >= count){
-                        console.log('Semaine prochaine');
+               
+                    if(parseInt(date)+1 >= count){
+                        console.log('La semaine prochaine');
                     }else{
                         console.log('cette semaine')
                     }
-                */
+               
                     console.log(datails.indexOf(words[1]) > 1);
                     //Charger le modal puor la prise de rendez vous
                     if(datails.indexOf(words[1]) > 0){
